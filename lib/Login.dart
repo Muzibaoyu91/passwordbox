@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Home.dart';
 import 'DataManager.dart';
-
+import 'Global.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -85,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
           }
         }
       },
-      color: Colors.blue,
+      color: LightColor,
       child: new Text(
         _localPassWord != null ? '登录' : '注册主密码',
         style: new TextStyle(color: Colors.white),

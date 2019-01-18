@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'PWModel.dart';
 import 'CreatePW.dart';
 import 'DataManager.dart';
+import 'Global.dart';
 
 class Home extends StatefulWidget {
   Home({Key key}) : super(key: key);
@@ -76,7 +77,7 @@ class _HomeState extends State<Home> {
         itemBuilder: (context, index) {
           return ListTile(
             leading: new CircleAvatar(
-                backgroundColor: Colors.blueAccent,
+                backgroundColor: LightColor,
                 child: new Text(
                   '${dataSource[index].themeName[0].toUpperCase()}',
                   style: new TextStyle(
@@ -123,7 +124,7 @@ class _HomeState extends State<Home> {
         //分割器构造器
         separatorBuilder: (BuildContext context, int index) {
           return Divider(
-            color: Colors.blue,
+            color: GloablColor,
           );
         },
         //列表尾部

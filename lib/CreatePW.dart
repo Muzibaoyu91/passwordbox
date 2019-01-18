@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fl_pwbox/PWModel.dart';
 import 'DataManager.dart';
+import 'Global.dart';
 
 class CreatePW extends StatefulWidget {
   CreatePW({Key key, this.originalPWModel}) : super(key: key);
@@ -148,9 +149,9 @@ class _CreatePWState extends State<CreatePW> {
                             new SnackBar(content: new Text("输入不能为空")));
                       }
                     },
-                    color: Colors.blue,
-                    highlightColor: Colors.lightBlueAccent,
-                    disabledColor: Colors.lightBlueAccent,
+                    color: LightColor,
+                    highlightColor: LightColor,
+                    disabledColor: LightColor,
                     child: new Text(
                       "完成",
                       style: new TextStyle(color: Colors.white),
